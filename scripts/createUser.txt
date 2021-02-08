@@ -1,0 +1,5 @@
+CREATE USER 'werehouse'@'localhost' IDENTIFIED BY 'werehouse';
+
+GRANT ALL PRIVILEGES ON * . * TO 'werehouse'@'localhost';
+
+ALTER USER 'werehouse'@'localhost' IDENTIFIED WITH mysql_native_password BY 'werehouse';

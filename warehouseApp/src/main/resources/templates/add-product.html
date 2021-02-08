@@ -1,0 +1,33 @@
+<!DOCTYPE>
+<html lang="en"  xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>PROGAM MAGAZYNOWY</title>
+</head>
+
+<body>
+
+<h2>PROGAM MAGAZYNOWY - Dodawanie produktu </h2>
+
+<hr>
+
+    <form action="addProduct" modelAttribute="product">
+        Nazwa produktu: <input type="text"  th:field="*{product.name}" >
+        <br><br>
+        Cena : <input type="text"  th:field="*{product.price}" >
+        <br><br>
+        Ilość:  <input type="text"  th:field="*{product.quantity}" >
+        <br><br>
+        Producent : <input type="text" th:field="*{product.producer}">
+        <br><br>
+        Parametr 1 : <input type="text" th:field="*{product.parametr1}">
+        <br><br>
+        Parametr 2 : <input  type="text" th:field="*{product.parametr2}">
+        <br><br>
+        Parametr 3: <input type="text" th:field="*{product.parametr3}">
+        <br><br>
+        <input type="submit" value="Dodaj"/>
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE>
+<html lang="en"  xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>PROGAM MAGAZYNOWY</title>
+</head>
+
+<body>
+
+<h2>PROGAM MAGAZYNOWY - Wydanie na magazynu </h2>
+
+<hr>
+
+    <form action="productOut" modelAttribute="product">
+        ID produktu: <input type="text"  th:field="*{product.id}" >
+        <br><br>
+        Ilość : <input type="text"  th:field="*{product.quantity}" >
+        <br><br>
+        <input type="submit" value="Wydaj z magazynu "/>
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>PROGAM MAGAZYNOWY</title>
+</head>
+<body>
+
+<h2>PROGAM MAGAZYNOWY - Stan magazynu</h2>
+
+<hr>
+        <table>
+            <tr>
+                <th>ID</th>
+                <th>Nazwa</th>
+                <th>Cena</th>
+                <th>Stan</th>
+                <th>Producent</th>
+                <th>Parametr 1</th>
+                <th>Parametr 2</th>
+                <th>Parametr 3</th>
+            </tr>
+
+            <th:block th:each="product : ${products}">
+                <tr class="row">
+                    <th class="id" th:text="${product.id}"></th>
+                    <th class="name" th:text="${product.name}"></th>
+                    <th class="price" th:text="${product.price} + ' zł.'"></th>
+                    <th class="producer" th:text="${product.quantity} + ' egz.'"></th>
+                    <th class="producer" th:text="${product.producer}"></th>
+                    <th class="parametr1" th:text="${product.parametr1}"></th>
+                    <th class="parametr2" th:text="${product.parametr2}"></th>
+                    <th class="parametr2" th:text="${product.parametr3}"></th>
+                </tr>
+            </th:block>
+        </table>
+
+</body>
+</html>
